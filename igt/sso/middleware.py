@@ -1,5 +1,4 @@
 import logging
-import re
 from functools import partial
 
 import jwt

@@ -3,11 +3,12 @@ from typing import Dict
 
 import aiohttp
 import requests
+import shielded  # prevents POST controllers from cancellation
 from aiohttp import web
 
+from . import avanpost, utils
 from .exceptions import TokenAlreadyRevoked
 from .logger import gateway_logger
-from . import avanpost, utils
 from .utils import (generate_state,
                     get_code_verifier,
                     set_code_verifier,
@@ -18,7 +19,6 @@ from .utils import (generate_state,
                     request_exchange,
                     request_refresh, has_token_expired
                     )
-import shielded  # prevents POST controllers from cancellation
 
 
 async def login(request):

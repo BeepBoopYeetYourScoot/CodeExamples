@@ -1,4 +1,4 @@
-from forest_gateway.settings import get_config
+import get_config
 
 config = get_config()
 
@@ -33,5 +33,3 @@ TOKEN_REVOCATION_URL = f'{ISSUER}/oauth2/token/revoke'
 
 CODE_VERIFIER_REDIS_KEY = "forest:sso:avanpost:code_verifier:{state}"
 TOKEN_REDIS_KEY = 'forest:sso:token:{access_token}'
-
-LOCALHOST_REDIRECT_URL = config.avanpost.localhost_redirect_url

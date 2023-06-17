@@ -12,9 +12,8 @@ import jwt.algorithms
 import requests
 from aiohttp import web
 from aiohttp.web_request import Request
-
-from forest_gateway.logger import gateway_logger
-from forest_gateway.users.sso import avanpost
+import gateway_logger
+from . import avanpost
 
 
 async def get_code_verifier() -> str:
