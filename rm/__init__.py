@@ -1,1 +1,1 @@
-# look for https://github.com/BeepBoopYeetYourScoot/CeleryBeat
+# Example link: https://github.com/BeepBoopYeetYourScoot/CeleryBeat
